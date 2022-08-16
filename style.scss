@@ -1,46 +1,90 @@
 $main: #f9f9f9;
+$accent: #333333;
 
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  color: $accent;
 }
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
 }
 .page {
-  background-color: $main;
   &-head {
     display: block;
     background-image: url(../img/bgc.png);
     background-repeat: no-repeat;
     background-position: 0 center;
     background-size: cover;
+    margin: 0;
+    &-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
   }
+  &-light {
+    background-color: $main;
+    display: block;
+  }
+  // &-dark {
+  // }
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 523px;
+  padding-top: 25px;
+  .logo {
+    // margin-left: 70px;
+    // margin-right: 130px;
+    &-img {
+      height: 52px;
+      width: 216px;
+    }
+  }
 }
 .nav {
   display: flex;
   list-style-type: none;
-  padding-left: none;
+  padding-left: 0;
   &-item {
     padding-right: 40px;
+    font-weight: 400;
+    font-size: 14px;
   }
   &-link {
-    text-decoration: none;
     color: #fff;
   }
 }
+.slogan {
+  font-family: "Noto Serif", serif;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
 .btn {
-  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 35px;
+  text-transform: uppercase;
   &-dark {
     color: #fff;
+    border: 1px solid white;
+    background-color: $accent;
+  }
+  &-catalog {
+    margin-bottom: 80px;
   }
 }
 .main {
@@ -53,9 +97,39 @@ body {
 .divider {
   background-color: #fff;
   height: 1px;
+  margin-bottom: 30px;
 }
-.bradn {
+.brand {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding-bottom: 30px;
+  &-item {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: 1px solid white;
+  }
+  &-img {
+    width: 160px;
+    height: 60px;
+  }
+  div:first-child {
+    border-left: none;
+  }
+}
+.divide {
+  width: 1px;
+  background-color: white;
+  height: 60px;
+}
+.second-screen {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  text-align: center;
+  &-events {
+  }
+}
+.category {
+  display: flex;
+  justify-content: space-between;
 }
