@@ -1,0 +1,58 @@
+.first-screen {
+  background-image: url(../img/bgc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 600px 15px 0 15px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+  &__divider {
+    height: 1px;
+    background-color: #fff;
+    width: 100vw;
+  }
+
+  &__brand {
+    margin: 30px 0;
+  }
+}
+.button {
+  &_dark {
+    color: #fff;
+    background: $accent;
+    border: 1px solid #ffffff;
+  }
+}
+.brand {
+  display: flex;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 14px;
+      padding-right: 15px;
+      border-right: 1px solid white;
+    }
+  }
+}
+.brand-img {
+  width: 160px;
+  height: 60px;
+}
+.title__first {
+  font-family: "Noto Serif";
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+}

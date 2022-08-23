@@ -1,135 +1,193 @@
-$main: #f9f9f9;
-$accent: #333333;
+@import "variables";
+@import "header";
+@import "first-screen";
 
-* {
-  margin: 0;
+*,
+*:before,
+*:after {
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  color: $accent;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
 }
-
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  color: $accent;
+}
 .wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*="__container"] {
   max-width: 1110px;
   margin: 0 auto;
 }
-.page {
-  &-head {
-    display: block;
-    background-image: url(../img/bgc.png);
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: cover;
-    margin: 0;
-    &-main {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
-    }
-  }
-  &-light {
-    background-color: $main;
-    display: block;
-  }
-  // &-dark {
-  // }
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 523px;
-  padding-top: 25px;
-  .logo {
-    // margin-left: 70px;
-    // margin-right: 130px;
-    &-img {
-      height: 52px;
-      width: 216px;
-    }
-  }
-}
-.nav {
-  display: flex;
-  list-style-type: none;
-  padding-left: 0;
-  &-item {
-    padding-right: 40px;
-    font-weight: 400;
-    font-size: 14px;
-  }
-  &-link {
-    color: #fff;
-  }
-}
-.slogan {
-  font-family: "Noto Serif", serif;
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-}
-.btn {
-  font-size: 18px;
-  font-weight: 500;
-  padding: 15px 35px;
-  text-transform: uppercase;
-  &-dark {
-    color: #fff;
-    border: 1px solid white;
-    background-color: $accent;
-  }
-  &-catalog {
-    margin-bottom: 80px;
-  }
-}
+
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
+  flex: 1 1 auto;
 }
-.divider {
-  background-color: #fff;
-  height: 1px;
-  margin-bottom: 30px;
+
+.button {
+  padding: 15px 35px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
-.brand {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  padding-bottom: 30px;
-  &-item {
-    padding-right: 15px;
-    padding-left: 15px;
-    border-left: 1px solid white;
-  }
-  &-img {
-    width: 160px;
-    height: 60px;
-  }
-  div:first-child {
-    border-left: none;
-  }
+
+.title {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
 }
-.divide {
-  width: 1px;
-  background-color: white;
-  height: 60px;
-}
-.second-screen {
-  padding-top: 100px;
-  padding-bottom: 120px;
-  text-align: center;
-  &-events {
-  }
-}
-.category {
-  display: flex;
-  justify-content: space-between;
-}
+
+// .wrapper {
+//   max-width: 1110px;
+//   margin: 0 auto;
+// }
+// .page {
+//   &-head {
+//     display: block;
+//     background-image: url(../img/bgc.png);
+//     background-repeat: no-repeat;
+//     background-position: 0 center;
+//     background-size: cover;
+//     margin: 0;
+//     &-main {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+//       color: #fff;
+//     }
+//   }
+//   &-light {
+//     background-color: $main;
+//     display: block;
+//   }
+//   // &-dark {
+//   // }
+// }
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-bottom: 523px;
+//   padding-top: 25px;
+//   .logo {
+//     // margin-left: 70px;
+//     // margin-right: 130px;
+//     &-img {
+//       height: 52px;
+//       width: 216px;
+//     }
+//   }
+// }
+// .nav {
+//   display: flex;
+//   list-style-type: none;
+//   padding-left: 0;
+//   &-item {
+//     padding-right: 40px;
+//     font-weight: 400;
+//     font-size: 14px;
+//   }
+//   &-link {
+//     color: #fff;
+//   }
+// }
+// .slogan {
+//   font-family: "Noto Serif", serif;
+//   margin-bottom: 50px;
+//   font-size: 36px;
+//   font-weight: 700;
+//   color: #fff;
+// }
+// .btn {
+//   font-size: 18px;
+//   font-weight: 500;
+//   padding: 15px 35px;
+//   text-transform: uppercase;
+//   &-dark {
+//     color: #fff;
+//     border: 1px solid white;
+//     background-color: $accent;
+//   }
+//   &-catalog {
+//     margin-bottom: 80px;
+//   }
+// }
+// .main {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   color: #fff;
+// }
+// .divider {
+//   background-color: #fff;
+//   height: 1px;
+//   margin-bottom: 30px;
+// }
+// .brand {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: row;
+//   padding-bottom: 30px;
+//   &-item {
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     border-left: 1px solid white;
+//   }
+//   &-img {
+//     width: 160px;
+//     height: 60px;
+//   }
+//   div:first-child {
+//     border-left: none;
+//   }
+// }
+// .divide {
+//   width: 1px;
+//   background-color: white;
+//   height: 60px;
+// }
+// .second-screen {
+//   padding-top: 100px;
+//   padding-bottom: 120px;
+//   text-align: center;
+//   &-events {
+//   }
+// }
+// .category {
+//   display: flex;
+//   justify-content: space-between;
+// }

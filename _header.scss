@@ -1,0 +1,53 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  &__container {
+    display: flex;
+    padding: 0 15px;
+    min-height: 102px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main-menu {
+  }
+
+  &__logo {
+  }
+
+  &__second-menu {
+  }
+}
+.menu {
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 40px 0px 0px;
+    }
+    &.search-icon {
+      background: url("/img/search.svg") left no-repeat;
+      padding-left: 34px;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    line-height: 150%;
+  }
+
+  &__icon {
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+}
