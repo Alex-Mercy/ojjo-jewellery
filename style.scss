@@ -2,6 +2,7 @@
 @import "header";
 @import "first-screen";
 @import "second-screen";
+@import "salons";
 
 *,
 *:before,
@@ -58,11 +59,18 @@ body {
 }
 
 .button {
+  color: #fff;
+  background: $accent;
+  border: 1px solid #ffffff;
   padding: 15px 35px;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  &_white {
+    color: $accent;
+    background: #ffffff;
+  }
 }
 
 .title {
@@ -70,9 +78,15 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 41px;
+  &_white {
+    color: #ffffff;
+  }
 }
 
 .subtitle {
   font-size: 21px;
   line-height: 140%;
+  &_white {
+    color: #ffffff;
+  }
 }

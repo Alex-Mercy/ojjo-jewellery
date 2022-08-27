@@ -1,0 +1,28 @@
+.salons {
+  background-image: url(../img/bgc-black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15px;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 140%;
+    max-width: 730px;
+  }
+}

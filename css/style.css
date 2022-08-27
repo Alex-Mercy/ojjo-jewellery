@@ -57,12 +57,6 @@
   margin: 30px 0;
 }
 
-.button_dark {
-  color: #fff;
-  background: #333333;
-  border: 1px solid #ffffff;
-}
-
 .brand {
   display: flex;
 }
@@ -186,6 +180,32 @@
   background-image: url(../img/cards/watch.png);
 }
 
+.salons {
+  background-image: url(../img/bgc-black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.salons__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 15px;
+}
+.salons__subtitle {
+  margin-bottom: 15px;
+}
+.salons__title {
+  margin-bottom: 45px;
+}
+.salons__text {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+  font-size: 17px;
+  line-height: 140%;
+  max-width: 730px;
+}
+
 *,
 *:before,
 *:after {
@@ -247,11 +267,18 @@ body {
 }
 
 .button {
+  color: #fff;
+  background: #333333;
+  border: 1px solid #ffffff;
   padding: 15px 35px;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.button_white {
+  color: #333333;
+  background: #ffffff;
 }
 
 .title {
@@ -260,8 +287,14 @@ body {
   font-size: 30px;
   line-height: 41px;
 }
+.title_white {
+  color: #ffffff;
+}
 
 .subtitle {
   font-size: 21px;
   line-height: 140%;
+}
+.subtitle_white {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
