@@ -1,0 +1,267 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.header__container {
+  display: flex;
+  padding: 0 15px;
+  min-height: 102px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item:not(:last-child) {
+  margin: 0px 40px 0px 0px;
+}
+.menu__item.search-icon {
+  background: url("/img/search.svg") left no-repeat;
+  padding-left: 34px;
+}
+.menu__link {
+  color: #fff;
+  line-height: 150%;
+}
+.menu__icon:not(:last-child) {
+  margin-right: 26px;
+}
+
+.first-screen {
+  background-image: url(../img/bgc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+.first-screen__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 600px 15px 0 15px;
+}
+.first-screen__title {
+  margin-bottom: 50px;
+}
+.first-screen__button:not(:last-child) {
+  margin-bottom: 80px;
+}
+.first-screen__divider {
+  height: 1px;
+  background-color: #fff;
+  width: 100vw;
+}
+.first-screen__brand {
+  margin: 30px 0;
+}
+
+.button_dark {
+  color: #fff;
+  background: #333333;
+  border: 1px solid #ffffff;
+}
+
+.brand {
+  display: flex;
+}
+.brand__item:not(:last-child) {
+  margin-right: 14px;
+  padding-right: 15px;
+  border-right: 1px solid white;
+}
+
+.brand__img {
+  width: 160px;
+  height: 60px;
+}
+
+.title__first {
+  font-family: "Noto Serif";
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+}
+
+.second-screen__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-screen__subtitle {
+  margin-bottom: 15px;
+}
+.second-screen__title {
+  margin-bottom: 60px;
+}
+.second-screen__category {
+  margin-bottom: 61px;
+}
+.second-screen__card {
+  margin-bottom: 120px;
+}
+
+.category {
+  display: flex;
+}
+.category__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 55px;
+  border: 1px solid #d6d6d6;
+  box-shadow: 5px 5px #f9f9f9, 5px 5px 0 1px #d6d6d6;
+}
+.category__item_active {
+  height: 61px;
+  color: #fff;
+  background-color: #333333;
+  box-shadow: none;
+}
+.category__item:not(:last-child) {
+  margin-right: 24px;
+}
+.category__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__item {
+  margin-bottom: 30px;
+}
+.card__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.card__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 350px;
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rings {
+  background-image: url(../img/cards/rings.png);
+}
+
+.earrings {
+  background-image: url(../img/cards/earrings.png);
+}
+
+.pendants {
+  background-image: url(../img/cards/pendants.png);
+}
+
+.cufflinks {
+  background-image: url(../img/cards/cufflinks.png);
+}
+
+.bracelets {
+  background-image: url(../img/cards/bracelets.png);
+}
+
+.watch {
+  background-image: url(../img/cards/watch.png);
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  background-color: #f9f9f9;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*=__container] {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.button {
+  padding: 15px 35px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.subtitle {
+  font-size: 21px;
+  line-height: 140%;
+}/*# sourceMappingURL=style.css.map */

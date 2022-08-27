@@ -2,6 +2,7 @@
   background-image: url(../img/bgc.png);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 100px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@
     }
   }
 }
-.brand-img {
+.brand__img {
   width: 160px;
   height: 60px;
 }
