@@ -77,23 +77,27 @@
   height: 280px;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  &__rings {
+    background-image: url(../img/cards/rings.png);
+  }
 
-.rings {
-  background-image: url(../img/cards/rings.png);
-}
-.earrings {
-  background-image: url(../img/cards/earrings.png);
-}
-.pendants {
-  background-image: url(../img/cards/pendants.png);
-}
-.cufflinks {
-  background-image: url(../img/cards/cufflinks.png);
-}
-.bracelets {
-  background-image: url(../img/cards/bracelets.png);
-}
-.watch {
-  background-image: url(../img/cards/watch.png);
+  &__earrings {
+    background-image: url(../img/cards/earrings.png);
+  }
+
+  &__pendants {
+    background-image: url(../img/cards/pendants.png);
+  }
+
+  &__cufflinks {
+    background-image: url(../img/cards/cufflinks.png);
+  }
+
+  &__bracelets {
+    background-image: url(../img/cards/bracelets.png);
+  }
+
+  &__watch {
+    background-image: url(../img/cards/watch.png);
+  }
 }

@@ -155,28 +155,22 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.rings {
+.item-card__rings {
   background-image: url(../img/cards/rings.png);
 }
-
-.earrings {
+.item-card__earrings {
   background-image: url(../img/cards/earrings.png);
 }
-
-.pendants {
+.item-card__pendants {
   background-image: url(../img/cards/pendants.png);
 }
-
-.cufflinks {
+.item-card__cufflinks {
   background-image: url(../img/cards/cufflinks.png);
 }
-
-.bracelets {
+.item-card__bracelets {
   background-image: url(../img/cards/bracelets.png);
 }
-
-.watch {
+.item-card__watch {
   background-image: url(../img/cards/watch.png);
 }
 
@@ -204,6 +198,55 @@
   font-size: 17px;
   line-height: 140%;
   max-width: 730px;
+}
+
+.blog {
+  padding: 120px 15px;
+}
+.blog__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog__subtitle {
+  margin-bottom: 15px;
+}
+.blog__title {
+  margin-bottom: 60px;
+}
+.blog__articles {
+  margin-bottom: 60px;
+}
+.articles-blog {
+  display: flex;
+  gap: 30px;
+}
+.articles-blog__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 350px;
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.articles-blog__item_1 {
+  background-image: url(../img/articles/01.png);
+}
+.articles-blog__item_2 {
+  background-image: url(../img/articles/02.png);
+}
+.articles-blog__item_3 {
+  background-image: url(../img/articles/03.png);
+}
+.articles-blog__text {
+  margin-bottom: 35px;
+  max-width: 210px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #ffffff;
+  text-align: center;
 }
 
 *,
