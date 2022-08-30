@@ -1,0 +1,99 @@
+.footer {
+  padding: 115px 15px 10px 15px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    margin-bottom: 10px;
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: $accent;
+    margin-bottom: 20px;
+  }
+
+  &__copyright {
+  }
+}
+.list-footer {
+  flex: 0 1 25%;
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: $accent;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    line-height: 150%;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &_icons {
+      display: flex;
+      gap: 20px;
+    }
+    &_payment {
+      padding-bottom: 10px;
+    }
+    &_social {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__contact {
+    padding-left: 40px;
+    &_1 {
+      background: url("/img/footer/phone.svg") left no-repeat;
+    }
+    &_2 {
+      background: url("/img/footer/phone.svg") left no-repeat;
+    }
+    &_3 {
+      background: url("/img/footer/email.svg") left no-repeat;
+    }
+  }
+
+  &__icon {
+    &_social {
+    }
+    &_payment {
+      width: 45px;
+      height: 30px;
+    }
+  }
+}
+
+.copyright-footer {
+  display: flex;
+  gap: 185px;
+  &__item {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

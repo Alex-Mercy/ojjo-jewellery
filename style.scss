@@ -6,6 +6,7 @@
 @import "blog";
 @import "social";
 @import "subscribe";
+@import "footer";
 
 *,
 *:before,
@@ -70,9 +71,16 @@ body {
   line-height: 21px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: background-color 0.3s ease 0s;
+  &:hover {
+    background: $dark-accent;
+  }
   &_white {
     color: $accent;
     background: #ffffff;
+    &:hover {
+      background: $bgc;
+    }
   }
 }
 

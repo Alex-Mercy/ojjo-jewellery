@@ -43,6 +43,9 @@
   &__link {
     color: #fff;
     line-height: 150%;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__icon {

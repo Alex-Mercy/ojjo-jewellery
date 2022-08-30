@@ -23,8 +23,15 @@
 .galery-social {
   &__item {
     position: relative;
+    overflow: hidden;
+    display: inline-block;
   }
   &__image {
+    display: block;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2);
+    }
     height: 300px;
     &_1 {
       width: 555px;
